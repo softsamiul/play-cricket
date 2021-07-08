@@ -13,7 +13,7 @@
         }
 
         body {
-            overflow: hidden;
+            /* overflow: hidden; */
         }
 
         h1 {
@@ -59,6 +59,58 @@
         .field:hover .ball {
             transform: translate(700px, -300px)
         }
+
+        #explore-more {
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+
+        @keyframes droping {
+
+            /* 0% {
+                left: 0;
+                top: 0;
+            }
+
+            25% {
+                top: 300px;
+            }
+
+            50% {
+                top: 0;
+            }
+
+            75% {
+                top: 300px;
+            }
+
+            100% {
+                top: 0;
+            } */
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 500px;
+            }
+        }
+
+        .box {
+            width: 900px;
+            height: 400px;
+            background: skyblue;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            background: orangered;
+            border-radius: 50%;
+            animation: droping 2s ease-in-out .5s infinite alternate running;
+        }
     </style>
 </head>
 
@@ -69,6 +121,12 @@
         <img class="bat" src="img/bat.webp" alt="This is a cricket bat">
         <div class="ball"></div>
     </div>
+    <section id="explore-more">
+        <h1>Explore more animation</h1>
+        <div class="box">
+            <div class="circle"></div>
+        </div>
+    </section>
 </body>
 
 </html>
