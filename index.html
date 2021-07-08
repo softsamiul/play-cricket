@@ -23,9 +23,17 @@
             background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
         }
 
+        .instruction {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
         .field {
-            width: 100%;
-            height: 600px;
+            width: 80%;
+            margin: 0 auto;
+            height: 550px;
             border: 2px solid green;
         }
 
@@ -39,7 +47,7 @@
             border-radius: 50%;
             background: brown;
             position: relative;
-            left: 30%;
+            left: 37%;
             transition: transform .2s ease-in .3s;
         }
 
@@ -56,6 +64,7 @@
 
 <body>
     <h1>Let's have some fun with animation</h1>
+    <p class="instruction">Just hover your mouse inside the box to hit the ball</p>
     <div class="field">
         <img class="bat" src="img/bat.webp" alt="This is a cricket bat">
         <div class="ball"></div>
