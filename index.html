@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module - 7 | Play Cricket</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 10px 0;
+            color: #fff;
+            background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+        }
+
+        .field {
+            width: 100%;
+            height: 600px;
+            border: 2px solid green;
+        }
+
+        .bat {
+            transition: transform .2s ease-out;
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: brown;
+            position: relative;
+            left: 30%;
+            transition: transform .2s ease-in .3s;
+        }
+
+        .field:hover .bat {
+            transform: rotate(-53deg);
+            transform-origin: top right;
+        }
+
+        .field:hover .ball {
+            transform: translate(700px, -300px)
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Let's have some fun with animation</h1>
+    <div class="field">
+        <img class="bat" src="img/bat.webp" alt="This is a cricket bat">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>
