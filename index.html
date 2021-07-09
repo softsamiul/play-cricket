@@ -65,36 +65,7 @@
             margin-bottom: 100px;
         }
 
-        @keyframes droping {
 
-            /* 0% {
-                left: 0;
-                top: 0;
-            }
-
-            25% {
-                top: 300px;
-            }
-
-            50% {
-                top: 0;
-            }
-
-            75% {
-                top: 300px;
-            }
-
-            100% {
-                top: 0;
-            } */
-            from {
-                left: 0;
-            }
-
-            to {
-                left: 500px;
-            }
-        }
 
         .box {
             width: 900px;
@@ -104,12 +75,43 @@
             margin-top: 30px;
         }
 
+        @keyframes droping {
+
+            0% {
+                background: orangered;
+                transform: translateX(0px) scale(.5);
+                left: 0;
+                top: 0;
+            }
+
+            25% {
+                top: 300px;
+            }
+
+            50% {
+                top: 0px;
+            }
+
+            75% {
+                top: 300px;
+            }
+
+            100% {
+                background-color: yellow;
+                transform: translateX(800px);
+                top: 0;
+            }
+
+        }
+
         .circle {
             width: 100px;
             height: 100px;
             background: orangered;
             border-radius: 50%;
+            position: relative;
             animation: droping 2s ease-in-out .5s infinite alternate running;
+
         }
     </style>
 </head>
